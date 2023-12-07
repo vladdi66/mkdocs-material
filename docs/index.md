@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# Main MkDocs page
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
