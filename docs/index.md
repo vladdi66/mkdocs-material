@@ -1,4 +1,4 @@
-# Main MkDocs page
+# Nice work in the making!
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
