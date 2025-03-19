@@ -46,4 +46,4 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 copyright: |
-  &copy; 2023 <a href="https://github.com/vladdi66"  target="_blank" rel="noopener">Vladdi</a>
+  &copy; 2025 <a href="https://github.com/vladdi66"  target="_blank" rel="noopener">Vladdi</a>
