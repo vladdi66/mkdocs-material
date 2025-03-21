@@ -1,6 +1,6 @@
 # Nice work in the making!
 
-Now this is complety redundant
+Now this is complety redundant . . 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
