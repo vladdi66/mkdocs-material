@@ -1,22 +1,33 @@
-name: ci 
+name: ci
 on:
   push:
     branches:
       - main
+
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - uses: actions/cache@v2
+
+      - uses: actions/cache@v3
         with:
           key: ${{ github.ref }}
           path: .cache
+
       - run: pip install mkdocs-material
-      - run: pip uninstall pillow cairosvg
-      - run: mkdocs gh-deploy --forcedea
+
+      - run: pip uninstall -y pillow cairosvg
+
+      - run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - run: mkdocs gh-deploy --force
